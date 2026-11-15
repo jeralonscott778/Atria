@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atria Hospital — find a doctor, book in a minute</title>
+<meta name="description" content="Find a consultant, book a clinic or video visit, and manage prescriptions, results and bills in one patient portal.">
+<meta name="theme-color" content="#F5F6FB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232F4FF5'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-weight='700' font-size='20' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top" id="top"></header>
+
+<main>
+  <div class="wrap"><section class="hero">
+    <p class="eyebrow">Consultant-led private care</p>
+    <h1>Medicine,<br><em>unhurried.</em></h1>
+    <div class="hero-foot">
+      <p>Choose your own doctor, see them in clinic or by video, and keep every result, prescription and bill in one place.</p>
+      <div class="cta"><a class="btn" href="#doctors">Find a doctor</a><a class="btn line" href="portal.html">Patient portal</a></div>
+    </div>
+  </section></div>
+
+  <div class="wrap">
+    <div class="trio">
+      <a href="#doctors"><b>Find a doctor</b><span>See who is free next and book a time that suits you.</span></a>
+      <a href="#doctors" data-video><b>Video visits</b><span>Talk to a consultant from home. Nothing to install.</span></a>
+      <a href="#packages"><b>Care packages</b><span>Health checks, maternity and long-term care at one clear price.</span></a>
+    </div>
+  </div>
+
+  <section class="sec wrap" id="doctors">
+    <div class="sec-head">
+      <div><p class="eyebrow">01 — Doctors</p><h2>Choose who you see.</h2></div>
+      <p>Every doctor's real calendar is here. Pick a name and you will see the next free time.</p>
+    </div>
+    <div class="filters">
+      <div class="field"><label for="q" style="position:absolute;left:-9999px">Search doctors</label><input id="q" type="search" placeholder="Search by name or problem, e.g. skin" autocomplete="off"></div>
+      <div class="chips" id="chips" role="group" aria-label="Specialty"></div>
+    </div>
+    <div id="doc-list"></div>
+  </section>
+
+  <section class="sec wrap" id="how">
+    <div class="sec-head">
+      <div><p class="eyebrow">02 — How it works</p><h2>Three steps, no paperwork.</h2></div>
+      <p>The same account works for you, your children and your parents.</p>
+    </div>
+    <ol class="steps">
+      <li><i>1</i><h3>Pick a doctor and a time</h3><p>Clinic or video. You see only the times that are really free.</p></li>
+      <li><i>2</i><h3>We remind you</h3><p>A message the day before, and a link to join if it is a video visit.</p></li>
+      <li><i>3</i><h3>Everything lands in your portal</h3><p>Visit summary, results, prescriptions and the bill, ready to read or pay.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec wrap" id="packages">
+    <div class="sec-head">
+      <div><p class="eyebrow">03 — Care packages</p><h2>One price, everything included.</h2></div>
+      <p>Enrol online, pay once, and tick off each part of the plan as it happens.</p>
+    </div>
+    <div class="packs" id="packs"></div>
+  </section>
+
+  <section class="sec wrap" id="portal">
+    <div class="sec-head">
+      <div><p class="eyebrow">04 — Patient portal</p><h2>Your care, in one place.</h2></div>
+      <p>Sign in with your phone number and a PIN. No app to download.</p>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Nothing to chase, nothing to carry.</h3>
+        <ul class="ticks" style="margin:22px 0 28px;font-size:15.5px">
+          <li>Upcoming and past appointments</li>
+          <li>Family profiles under one login</li>
+          <li>Prescriptions with one-tap refill requests</li>
+          <li>Results and visit summaries in plain words</li>
+          <li>Bills you can pay by mobile money or card</li>
+        </ul>
+        <a class="btn" href="portal.html">Open the portal</a>
+      </div>
+      <div class="sheet" aria-hidden="true">
+        <div class="sheet-row"><div><b>Next appointment</b><small>Example of what you see after signing in</small></div><span class="tag blue">Video</span></div>
+        <div class="sheet-row"><div><b>Prescription</b><small>Request a refill in one tap</small></div><span class="tag">Refill</span></div>
+        <div class="sheet-row"><div><b>Visit summary</b><small>Written by your doctor</small></div><span class="tag ok">New</span></div>
+        <div class="sheet-row"><div><b>Bill</b><small>Pay by mobile money or card</small></div><span class="tag">Pay</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="foot"></footer>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
